@@ -6,10 +6,4 @@ class BelanjaCubit extends Cubit<int> {
   void tambahBarang() {
     emit(state + 1);
   }
-
-  void kurangiBarang() {
-    if (state > 0) {
-      emit(state - 1);
-    }
   }
-}

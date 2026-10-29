@@ -23,16 +23,6 @@ class KeranjangPage extends StatelessWidget {
                 );
               },
             ),
-            const SizedBox(height: 16),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                ElevatedButton(
-                  onPressed: () {
-                    context.read<BelanjaCubit>().kurangiBarang();
-                  },
-                  child: const Text('Kurangi'),
-                ),
                 const SizedBox(width: 16),
                 ElevatedButton(
                   onPressed: () {
@@ -42,8 +32,6 @@ class KeranjangPage extends StatelessWidget {
                 ),
               ],
             ),
-          ],
-        ),
       ),
     );
   }
